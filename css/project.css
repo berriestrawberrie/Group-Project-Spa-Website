@@ -1,0 +1,39 @@
+/*CSS STYLING THAT APPLIES TO ALL PAGES */
+:root{
+    --bgcolor : #6C5240;
+    --brand-white: #EFE7DD;
+    --brand-brown: #69452E;
+    --brand-orange: #9B4922; 
+    
+  }
+
+  body{
+      background-color: var(--bgcolor);
+      color: var(--brand-white);
+      font-family: "Poppins", serif;
+      font-weight: 400;
+      font-style: normal;
+  
+    }
+
+  h1 , h2 {
+      font-family: 'TAN - MERINGUE';
+  
+  }
+
+  main{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    border: 2px solid red;
+  }
+  
+  footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    border: 2px solid blue;
+  }
+  
+  
+  

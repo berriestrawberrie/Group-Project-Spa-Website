@@ -1,0 +1,54 @@
+ /*NAV BAR:: TOP OF THE SCREEN BANNER*/
+ .nav__banner{
+    height: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+/*NAV BAR:: HIDE CHECKBOX ORIGINAL FORMAT*/
+#openmenu{
+    display: none;
+  }
+
+/*NAV BAR:: MENU ICON HOVER EFFECT*/
+  .menu-icon:hover{
+    opacity: 30%;
+  }
+/*NAV BAR:: NAV BAR SIDE MENU */
+  nav{
+    margin-top: 30px;
+    height: 100%;
+    z-index: 2;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #6C524080;
+    overflow-x: hidden;
+    color: var(--brand-white);
+    transform: translateX(-250px);
+    transition: transform 500ms ease-in-out;
+  }
+
+/*NAV BAR:: STYLE UL NAV LINKS*/
+  nav ul{
+    list-style-type: none;
+  }
+  nav li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+  }
+  .nav__banner a{
+    text-align: left;
+    text-decoration: none;
+    color: var(--brand-white);
+  }
+  .nav__banner a:hover{
+    opacity: 40%;
+  }
+
+/*NAV BAR ANIMATION SLIDE OUT WHEN CHECKBOX CHECKED*/
+input:checked ~ label nav {
+  transform: translateX(0);
+}

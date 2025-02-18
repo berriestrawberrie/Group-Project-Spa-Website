@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TAN - MERINGUE';
+    src: url('../fonts/TAN-MERINGUE/TAN-MERINGUE.eot');
+    src: url('../fonts/TAN-MERINGUE/TAN-MERINGUE.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TAN-MERINGUE/TAN-MERINGUE.woff2') format('woff2'),
+         url('../fonts/TAN-MERINGUE/TAN-MERINGUE.woff') format('woff'),
+         url('../fonts/TAN-MERINGUE/TAN-MERINGUE.ttf')  format('truetype'),
+         url('../fonts/TAN-MERINGUE/TAN-MERINGUE.svg#TAN - MERINGUE') format('svg');
+}
