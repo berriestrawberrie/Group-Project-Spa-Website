@@ -1,0 +1,79 @@
+p{
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+main{
+  position: relative;
+  overflow-x: hidden;
+  border: none;
+  max-width: 100vw;
+  width: 100%;
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100vw;
+    width: 100%;
+    background-image: url(../images/canva.png);
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.cover{
+  position: absolute;
+  background-color: var(--bgcolor);
+  width: 100vw;
+  height: 100vh;
+  animation-name: coverfade;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+
+/*MAIN SECTION: TITLE*/
+.splash__title p{
+  font-size: 20px;
+}
+.splash__title h1{
+    font-size: 150px;
+    line-height: 165px;
+    max-width:800px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+
+
+}
+.splash__sub{
+  background-color: #69452E95;
+  max-width: 1200px;
+  width: 100%;
+  height: 51px;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.splash__sub p{
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding: 10px;
+
+}
+
+
+/*CSS ANIMATION */
+
+@keyframes coverfade {
+  0% {opacity: 1}
+  100% {opacity: 0}
+  
+}
