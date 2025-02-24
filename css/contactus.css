@@ -13,11 +13,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px #EFE7DD;
     background-color: var(--bgcolor);
     background: linear-gradient(rgba(108, 82, 64, 1.0), rgba(108, 82, 64, 0.5));
 }
@@ -50,27 +50,52 @@ iframe:hover {
     transition: all 0.3s ease-in-out;
     color: #9B4922;
     font-weight: bold;
-    cursor: 
 }
 
 .contact-form button {
     display: flex;
     background-color: var(--brand-orange);
     color: var(--brand-white);
+    margin-bottom: 30px;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 2px 2px 2px var(--brand-orange);
-    transition: all 0,3 ease-in-out;
     
 }
 
 button:hover {
-    background-color: var(--brand-orange);
-    box-shadow: 4px 4px 10px var(--brand-orange);
-    transform: translateY(-2px);
+    transform: scale(1.1);
+    color: #9B4922;
+    cursor: pointer;
+    animation: blinkCursor 0.8s infinite, colorChange 1s infinite alternate;
 }
+@keyframes blinkCursor {
+    0% {opacity: 1;}
+    50% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+@keyframes colorChange {
+    0% {color: #EFE7DD; }
+    100% {color: #9B4922; } 
+}
+.ending-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #EFE7DD;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #9B4922;
+    width: 0;
+    animation: typing 4s steps(40,end) forwards;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
 footer {
    color: #EFE7DD;
    text-align: center;
