@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--GLOBAL INFORMATION-->
     <meta charset="UTF-8">
@@ -17,16 +18,19 @@
     <!--GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/df8ac4cd23.js" crossorigin="anonymous"></script>
     <!--ANIMATECSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!--PAGE SPECIFIC INFORMATION-->
     <link rel="stylesheet" href="#">
     <title>Blank Page</title>
 </head>
+
 <body>
 
     <!--HEADER NAVIGATION -->
@@ -34,7 +38,7 @@
         <div class="nav__banner">
             <input type="checkbox" class="openmenu" id="openmenu">
             <label for="openmenu">
-               <i class="fa-solid fa-bars menu-icon"></i>
+                <i class="fa-solid fa-bars menu-icon"></i>
                 <nav>
                     <ul>
                         <!--NAV LINKS-->
@@ -53,24 +57,54 @@
 
     <!--MAIN CONTENT-->
     <main>
-        <h1>Spa Gallery</h1>
-        <div class="container">
-            <div class="img-container">
-                <img src="/images/gallery/img1.jpg" alt="image1">
-                <img src="/images/gallery/img2.jpg" alt="image1">
-                <img src="/images/gallery/img3.jpg" alt="image1">
-                <img src="/images/gallery/img4.jpg" alt="image1">
-                <img src="/images/gallery/img5.jpg" alt="image1">
-                <img src="/images/gallery/img6.jpg" alt="image1">
-            </div>
-        </div>     
+        <div class="title-container">
+            <h1>SkinCare Spa Gallery</h1>
+        </div>
+        <div class="gallery">
+            <input type="radio" checked="checked" name="select" id="img-tab-1">
+            <label for="img-tab-1" style="background-image: url(/images/gallery/img1.jpg);"></label>
+            <img src="/images/gallery/img1.jpg">
+    
+            <input type="radio" name="select" id="img-tab-2">
+            <label for="img-tab-2" style="background-image: url(/images/gallery/img2.jpg);"></label>
+            <img src="/images/gallery/img2.jpg">
+    
+            <input type="radio" name="select" id="img-tab-3">
+            <label for="img-tab-3" style="background-image: url(/images/gallery/img3.jpg);"></label>
+            <img src="/images/gallery/img3.jpg">
+    
+            <input type="radio" name="select" id="img-tab-4">
+            <label for="img-tab-4" style="background-image: url(/images/gallery/img4.jpg);"></label>
+            <img src="/images/gallery/img4.jpg">
+    
+            <input type="radio" name="select" id="img-tab-5">
+            <label for="img-tab-5" style="background-image: url(/images/gallery/img5.jpg);"></label>
+            <img src="/images/gallery/img5.jpg">
+    
+            <input type="radio" name="select" id="img-tab-6">
+            <label for="img-tab-6" style="background-image: url(/images/gallery/img6.jpg);"></label>
+            <img src="/images/gallery/img6.jpg">
+    
+            <input type="radio" name="select" id="img-tab-7">
+            <label for="img-tab-7" style="background-image: url(/images/gallery/img7.jpg);"></label>
+            <img src="/images/gallery/img7.jpg">
+    
+            <input type="radio" name="select" id="img-tab-8">
+            <label for="img-tab-8" style="background-image: url(/images/gallery/img8.jpg);"></label>
+            <img src="/images/gallery/img8.jpg">
+    
+            <!-- <input type="radio" name="select" id="img-tab-9">
+            <label for="img-tab-9" style="background-image: url(/images/gallery/img8.jpg);"></label>
+            <img src="/images/gallery/img8.jpg"> -->
+        </div>
     </main>
-    
-    <!--FOOTER CONTENT-->
-    <footer>
-        <h2>Footer Section</h2>
-    </footer>
 
-    
+    <!--FOOTER CONTENT-->
+    <!-- <footer>
+        <h2>Footer Section</h2>
+    </footer> -->
+
+
 </body>
+
 </html>
