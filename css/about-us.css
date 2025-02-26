@@ -12,20 +12,13 @@ main{
     border: none;
   }
 
-  footer {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-    border: none;
-  }
-
   .scroll-watcher {
     height: 10px;
     border-radius: 50px;
     position: fixed;
     top:0;
     z-index: 1000;
-    background-color: rgba(215, 85, 24, 0.6);
+    background-color: rgba(134, 66, 35, 0.6);
     width: 100%;
     scale: 0 1;
     transform-origin: left;
@@ -42,7 +35,20 @@ main{
     height: 900px;
     display: flex;
     flex-direction: row;
+    animation-name: fade-in;
+    animation: fade-in linear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes fade-in{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+  }
+
+  @keyframes fade-out{
+    to {opacity: 0;}
+  }
 
 .container_about-text {
     width: 600px;
@@ -132,6 +138,12 @@ main{
     left: 40px;
     z-index: 1;
     opacity: 0.3;
+}
+
+.img-about, .about_blocktext {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: 600px exit;
 }
 
 /* Team section */
@@ -266,6 +278,12 @@ main{
     justify-content: center;
 }
 
+.our-team {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: 1100px exit;
+}
+
 /* FAQ section */
 .FAQ {
     width: 1200px;
@@ -356,38 +374,6 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
-/*
-summary::after {
-    font-family: "font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f067";
-}
-
-
-details [open] .summary::after{
-    font-family: "font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f068";
-    transform: rotate(70deg);
-    transition: rotate 200ms ease-out;
-}
-*/
-/*
-details > summary {
-    padding: 4px;
-    width: 800px;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-details > .answers {
-    padding: 4px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-*/
 .questions {
     font-family: 'TAN - MERINGUE';
     font-weight: 400;
@@ -414,6 +400,12 @@ a {
 a:hover {
     color: #69452E;
     font-weight: 700;
+}
+
+.FAQ {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: 1100px exit;
 }
 
 /* Story section */
@@ -463,20 +455,12 @@ a:hover {
     opacity: 1;
 }
 
-/*
-@keyframes relaxing {
-    0% {opacity: 1;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
-}
-*/
-
 .img-products {
     width: 300px;
     height: 600px;
     opacity: 0.5;
 }
-.img-greenproducts {
+.img-tray {
     width: 300px;
     height: 600px;
     opacity: 0.5;
@@ -544,69 +528,93 @@ a {
     text-decoration: none;
 }
 
-/* Social media - footer */
+.our-story {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: 1100px exit;
+}
 
+/* Footer section */
 .line-break {
-    color:#EFE7DD;
-    margin-bottom: 70px;
-}
-
-.contact-details {
+    border: solid #EFE7DD 1px;
     width: 1200px;
-    height: 400px;
-    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
-.social-title {
-    font-size: 40px;
-    position: relative;
-    display: inline-block;
+footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    border: none;
 }
 
-/* Hover underline title starts */
-.social-title::after, .social-title::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #9B4922, #EFE7DD);
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s ease-out;
+.container_footer {
+    width: 1100px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.social-title::before {
-    top: -15px;
-    transform-origin: left;
+.boxes{
+    z-index: 1;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.social-title:hover::after, .social-title:hover::before {
-    transform: scaleX(1);
+footer ul{
+    list-style-type: none;
 }
-/* Hover underline title ends */
 
-/* Footer */
+footer li{
+    margin-bottom: 10px;
+}
 
+.li-title {
+    width: 140px;
+    height: 10px;
+}
+
+/*HEADERS ALIGN WITH LIST */
+footer li:first-of-type{
+    color: var(--brand-orange);
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--bg-orange);
+}
+
+footer a:hover{
+    color: var(--brand-orange);
+    font-weight: 600;
+}
+
+/* Social media */
 .fa-brands {
-    height: 100px;
-    font-size: 50px;
+    font-size: 20px;
     color: #EFE7DD;
-    margin-top: 12px;
+    margin-top: 4px;
 }
 
 .icons {
-    width: 400px;
-    height: 75px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 150px;
 }
 
 .circle-icon {
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #9B4922;
     display: flex;
@@ -631,10 +639,68 @@ a {
 }
 
 .circle-icon:hover::before {
-    transform: scaleX(1);
+    transform: scaleX(1.01);
 }
 
 .circle-icon {
     z-index: 1;
     color: #9B4922;
 }
+
+/*FOOTER:: SUBSCRIPTION SECTION*/
+.container_footer2 {
+    width: 1000px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-left: 75px;
+}
+
+footer h4{
+    letter-spacing: 5px;
+}
+
+.subscription {
+    width: 300px;
+    height: 240px;
+}
+
+#email{
+    width: 200px;
+}
+
+#submit{
+    background-color: var(--brand-orange);
+    border: none;
+    padding: 4px;
+    font-weight: 600;
+    color: var(--brand-white);
+    letter-spacing: 1.5px;
+}
+
+#submit:hover{
+    color: var(--brand-orange);
+    background-color: var(--brand-white);
+}
+
+#region{
+    margin-left: 10px;
+}
+
+.form_region, .form_letter {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*
+.form_region, .form-letter {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+*/
