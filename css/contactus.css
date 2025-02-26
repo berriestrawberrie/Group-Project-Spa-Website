@@ -1,0 +1,127 @@
+:root{
+    --bgcolor : rgb(108, 82, 64);
+    --brand-white: rgb(239, 231, 221);
+    --brand-brown: #69452E;
+    --brand-orange: #9B4922; 
+}
+
+body {
+    background-image: url(/images/canva.png);
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #EFE7DD;
+    background-color: var(--bgcolor);
+    background: linear-gradient(rgba(108, 82, 64, 1.0), rgba(108, 82, 64, 0.5));
+}
+iframe {
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(80%) contrast(110%);
+    box-shadow: 2px 2px 10px rgba(239, 231, 221, 0.8);
+    cursor: pointer;
+}
+iframe:hover {
+    transform: scale(1.06);
+}
+.contact-form {
+    margin-top: 10px;
+    text-align: left;
+}
+.contact-form label {
+    font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--brand-brown);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    color: #9B4922;
+    font-weight: bold;
+}
+
+.contact-form button {
+    display: flex;
+    background-color: var(--brand-orange);
+    color: var(--brand-white);
+    margin-bottom: 30px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px var(--brand-orange);
+    
+}
+
+button:hover {
+    transform: scale(1.1);
+    color: #9B4922;
+    cursor: pointer;
+    animation: blinkCursor 0.8s infinite, colorChange 1s infinite alternate;
+}
+@keyframes blinkCursor {
+    0% {opacity: 1;}
+    50% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+@keyframes colorChange {
+    0% {color: #EFE7DD; }
+    100% {color: #9B4922; } 
+}
+.ending-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #EFE7DD;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #9B4922;
+    width: 0;
+    animation: typing 4s steps(40,end) forwards;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+footer {
+   color: #EFE7DD;
+   text-align: center;
+   padding: 20px, 10px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.footer-social a {
+    color: #EFE7DD;
+    font-size: 30px;
+    margin: 0 30px;
+    transition: 0.3s;
+}
+.footer-social a:hover {
+    transform: scale(1.2);
+    color: #9B4922;
+    cursor: pointer;
+    animation: blinkCursor 0.8s infinite, colorChange 1s infinite alternate;
+}
+@keyframes blinkCursor {
+    0% {opacity: 1;}
+    50% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+@keyframes colorChange {
+    0% {color: #EFE7DD; }
+    100% {color: #9B4922; } 
+}
