@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!--CUSTOM FONT-->
     <link rel="stylesheet" href="css/TAN - MERINGUE.css">
-    <!--NAVBAR CSS-->
-    <link rel="stylesheet" href="css/navbar.css">
     <!--PROJECT CSS-->
     <link rel="stylesheet" href="css/project.css">
+    <!--NAVBAR CSS-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <!--FOOTER CSS-->
+    <link rel="stylesheet" href="css/footer.css">
     <!--GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +30,7 @@
 
     <!--HEADER NAVIGATION -->
     <header>
+     
         <div class="nav__banner">
             <!--HIDDEN CHECKBOX INPUT-->
             <input type="checkbox" class="openmenu" id="openmenu">
@@ -51,9 +54,13 @@
 
     <!--MAIN CONTENT-->
     <main>
+        <!--
+            <div class="scroll-nav"></div>
+        -->
         <div class="cover"></div>
         <!--SPLASH SECTION-->
         <section class="splash">
+           
             <div class="splash__title">
                 <p>Saltford & Co.</p>
                 <h1 >
@@ -65,13 +72,112 @@
                 <p>www.reallygreatsite.com</p>
             </div>
         </section>
+    
+        <section class="reviews">
+                <h2>Testimonials</h2>
+                <div class="reviews__post">
+                    <div class="post__wrapper-top">
+                        <div class="post__text">
+                            <h3>Rachelle Beaudry</h3>
+                            <span><p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i></p></span>
+                            <p>" Skincare Spa is a sanctuary of relaxation! Expert estheticians, 
+                                top-notch treatments, and a soothing ambiance make every visit 
+                                rejuvenating. My skin has never felt better! "</p>
+                        </div>
+                        <div class="post__img-top">
+                        </div>
+                        <div class="img__credit img__credit-right">
+                            <p>Photo by Brian Asare on Unsplash</p>
+                        </div>
+                    </div>
+                    <div class="post__wrapper-bottom">
+                        <div class="post__img-bottom">
+                        </div>
+                        <div class="img__credit img__credit-left">
+                            <p>Photo by Icons8 Team on Unsplash</p>
+                        </div>
+                        <div class="post__text">
+                            <h3>Kimberly Henriksson</h3>
+                            <span><p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i></p></span>
+                            <p>" Skincare Spa is a true gem! Exceptional facials, relaxing ambiance, 
+                                and knowledgeable staff make every visit a rejuvenating experience. 
+                                My skin has never felt better—highly recommend for glowing, healthy skin! "</p>
+                        </div>
+                      
+                    </div>
+           
+                </div>
+       
+        </section>
  
 
     </main>
     
     <!--FOOTER CONTENT-->
     <footer>
-        <section></section>
+        <svg class="svg-point" height="150" width="200" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="0,0 100,70 200,0"  />
+            Sorry, your browser does not support inline SVG.
+          </svg>
+
+        
+        <section>
+            <ul>
+                <li><p>SKINCARE SPA</p></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Our Product</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+         </section>
+         <section>
+            <ul>
+                <li><p>Services</p></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Group Reservations</a></li>
+                <li><a href="#">Events</a></li>
+               
+            </ul>
+         </section>
+         <section>
+            <ul>
+                <li><p>Social</p></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Youtube</a></li>
+    
+            </ul>
+         </section>
+         <section>
+            <ul>
+                <li><p>Activities</p></li>
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+                <li><a href="#">Activity 3</a></li>
+                <li><a href="#">Activity 4</a></li>
+            </ul>
+         </section> 
+         <section>
+            <h4>News Letter Subscription</h4>
+            <form class="form_letter">
+                <input id="email" type="email" placeholder="enter email">
+                <input id="submit" type="submit">
+            </form>
+            <form class="form_region">
+                <label for="region"><i class="fa-solid fa-earth-americas"></i> Region: </label>
+                <select id="region">
+                    <option>North</option>
+                    <option>South</option>
+                    <option>East</option>
+                    <option>West</option>
+                </select>
+            </form>
+         </section>
+         
     </footer>
 
     
