@@ -1,0 +1,22 @@
+<svg width="250" height="250" viewbox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+    <polyline points="30,30 240,30" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+
+    <polyline points="240,30 240,150" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    <polyline points="240,150 110,150" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+
+    <polyline points="110,150 70,190" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    <polyline points="70,190 70,150" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    <polyline points="70,150 30,150" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    <polyline points="30,150 30,30" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+
+    <polyline points="55,50 55,130" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    <polyline points="55,50 95,50" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    <polyline points="55,80 85,80" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    
+    <polyline points="125,50 105,130" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    <polyline points="125,50 145,130" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+
+    <ellipse cx="190" cy="90" rx="25" ry="40" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+    <polyline points="200,120 210,130" stroke="#6C5240" stroke-width="7" stroke-linecap="round"/>
+</svg>
