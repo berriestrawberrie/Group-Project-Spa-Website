@@ -587,11 +587,7 @@ a {
 }
 /* Hover underline title ends */
 
-/* Simple underline
-.social-title:hover {
-    text-decoration: underline;
-}
-*/
+/* Footer */
 
 .fa-brands {
     height: 100px;
