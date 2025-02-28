@@ -4,7 +4,9 @@
     --brand-brown: #69452E;
     --brand-orange: #9B4922; 
 }
-
+h3 {
+    margin: 10px;
+}
 body {
     background-image: url(/images/canva.png);
     background-size: cover;
@@ -52,7 +54,7 @@ iframe:hover {
     font-weight: bold;
 }
 
-.contact-form button {
+.btn {
     display: flex;
     background-color: var(--brand-orange);
     color: var(--brand-white);
@@ -62,15 +64,60 @@ iframe:hover {
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 2px 2px 2px var(--brand-orange);
+    width: 130px;
+    text-decoration: none;
     
 }
 
-button:hover {
+.btn:hover {
     transform: scale(1.1);
     color: #9B4922;
     cursor: pointer;
     animation: blinkCursor 0.8s infinite, colorChange 1s infinite alternate;
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 70px;
+    top: 70px;
+    width: 40%;
+    height: 40%;
+    background-color: #8f725f;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #EFE7DD;
+}
+#popup:target {
+    display: flex;
+}
+.modal-content {
+    background-color: #8f725f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    width: 500px;
+}
+.close-btn {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #9B4922;
+    color: #EFE7DD;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px var(--brand-orange);
+    justify-content: center;
+    text-decoration: none;
+}
+
+.close-btn:hover {
+        transform: scale(1.1);
+        color: #9B4922;
+        cursor: pointer;
+        animation: blinkCursor 0.8s infinite, colorChange 1s infinite alternate;
+}
+
 @keyframes blinkCursor {
     0% {opacity: 1;}
     50% {opacity: 0.8;}
@@ -80,6 +127,7 @@ button:hover {
     0% {color: #EFE7DD; }
     100% {color: #9B4922; } 
 }
+/*
 .ending-text {
     font-size: 15px;
     font-weight: bold;
@@ -95,7 +143,7 @@ button:hover {
     from { width: 0; }
     to { width: 100%; }
 }
-
+*/
 footer {
    color: #EFE7DD;
    text-align: center;
