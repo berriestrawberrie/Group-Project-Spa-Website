@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--PAGE SPECIFIC INFORMATION-->
     <link rel="stylesheet" href="css/our-products.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/our-products-splash.css"> -->
  
     <title>Our Products</title>
 </head>
@@ -39,10 +41,10 @@
                         <!--NAV LINKS-->
                         <li><a href="index.html">Home</a></li>
                         <li><a href="blank.html">Blank Page</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
                         <li><a href="our-products.html">Our Products</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </label>
@@ -52,8 +54,25 @@
 
     <!--MAIN CONTENT-->
     <main>
+
+        <!-- <div class="cover"></div>
+        <section class="splash">
+           
+            <div class="splash__title">
+                <p>Saltford & Co.</p>
+                <h1 >
+                    Our products
+                </h1>
+                <div class="splash__sub ">
+                    <p>Hydrate, exfoliate, illuminate</p>
+                </div>
+                <p>www.reallygreatsite.com</p>
+            </div>
+        </section> -->
+
+
         <p>Saltford & Co.</p>
-        <h1 class="h1 our-products-title">Our Products</h1>
+        <h1 class="h1 our-products-title">Our Products</h1> 
         <div class="grid__container">
                 <div class="grid__element first">
                     <div class="layer"></div>
@@ -69,12 +88,13 @@
                     <img src="our-products-images/diana-light-pBBxMUCgwuU-unsplash.jpg" alt="salt scrub" class="image">
                 </div>
                 <div class="grid__element fourth">
-                    <h3>Lavender & Chamomile Body Oil</h3>
-                    <p class="info">A deeply nourishing body oil infused with lavender and chamomile extracts to relax the mind and hydrate the skin. Perfect for massages or as a daily moisturizer to leave your skin feeling soft and rejuvenated.</p>
-                </div>
-                <div class="grid__element fifth">
                     <h3> Green Tea & Aloe Face Mask</h3>
                     <p class="info">A soothing and antioxidant-rich face mask that hydrates and revitalizes tired skin. Green tea helps reduce redness and inflammation, while aloe vera provides deep hydration for a healthy, radiant complexion.</p>
+                   
+                </div>
+                <div class="grid__element fifth">
+                    <h3>Lavender & Chamomile Body Oil</h3>
+                    <p class="info">A deeply nourishing body oil infused with lavender and chamomile extracts to relax the mind and hydrate the skin. Perfect for massages or as a daily moisturizer to leave your skin feeling soft and rejuvenated.</p>
                 </div>
                 <div class="grid__element sixth">
                     <h3>Himalayan Salt & Rose Scrub</h3>
@@ -82,12 +102,72 @@
                 </div>
 
         </div>
+
     </main>
     
-    <!--FOOTER CONTENT-->
-    <footer>
-        <section></section>
-    </footer>
+   
+ <!--FOOTER CONTENT-->
+ <footer>
+    <svg class="svg-point" height="150" width="200" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="0,0 100,70 200,0"  />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+    
+    <section>
+        <ul>
+            <li><p>SKINCARE SPA</p></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Our Product</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+     </section>
+     <section>
+        <ul>
+            <li><p>Services</p></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Group Reservations</a></li>
+            <li><a href="#">Events</a></li>
+           
+        </ul>
+     </section>
+     <section>
+        <ul>
+            <li><p>Social</p></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+
+        </ul>
+     </section>
+     <section>
+        <ul>
+            <li><p>Activities</p></li>
+            <li><a href="#">Activity 1</a></li>
+            <li><a href="#">Activity 2</a></li>
+            <li><a href="#">Activity 3</a></li>
+            <li><a href="#">Activity 4</a></li>
+        </ul>
+     </section> 
+     <section>
+        <h4>News Letter Subscription</h4>
+        <form class="form_letter">
+            <input id="email" type="email" placeholder="enter email">
+            <input id="submit" type="submit">
+        </form>
+        <form class="form_region">
+            <label for="region"><i class="fa-solid fa-earth-americas"></i> Region: </label>
+            <select id="region">
+                <option>North</option>
+                <option>South</option>
+                <option>East</option>
+                <option>West</option>
+            </select>
+        </form>
+     </section>
+     
+</footer>
 
     
 </body>
