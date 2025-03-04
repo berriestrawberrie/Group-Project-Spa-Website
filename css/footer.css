@@ -1,4 +1,5 @@
 footer{
+
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -34,6 +35,9 @@ footer li{
     margin-bottom: 10px;
     
 }
+footer p{
+    text-align: left;
+}
 
 /*HEADERS ALIGN WITH LIST */
 footer li:first-of-type{
@@ -52,7 +56,6 @@ footer a{
 }
 footer a:hover{
     color: var(--brand-orange);
-    transform: scale(2);
     font-weight: 600;
 }
 
