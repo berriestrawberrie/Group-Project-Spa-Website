@@ -1,4 +1,11 @@
 .splash{
+  background-image: url(../images/gallery/wood3.png);
+}
+.cover{
+  
+  animation-delay: 1s;
+}
+.splash{
     flex-direction: column;
   }
   
