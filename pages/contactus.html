@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <!--GLOBAL INFORMATION-->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--NORMALIZE CSS-->
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <!--PROJECT CSS-->
     <link rel="stylesheet" href="../css/project.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <!--GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!--PAGE SPECIFIC INFORMATION-->
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/contactus.css">
     <title>Contact us</title>
 </head>
@@ -38,11 +37,12 @@
                 <nav>
                     <ul>
                         <!--NAV LINKS-->
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/about-us.html">About Us</a></li>
-                        <li><a href="../pages/our-products.html">Our Products</a></li>
-                        <li><a href="../pages/gallery.html">Gallery</a></li>
-                        <li><a href="../pages/contactus.html">Contact Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blank.html">Blank Page</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
             </label>
@@ -52,16 +52,15 @@
 
     <!--MAIN CONTENT-->
     <main>
+        
        <div class="container">
-        <p class="ending-text">
-            <strong>You are more than your thoughts. You are more than your stress. You are a soul that deserves peace.</strong>
-        </p>
+        <h3>Salford & Co.</h3>
         <h1>Contact us</h1>
       
         <div class="contact-info">
             <p><strong>Address:</strong> Relaxvägen 12, 123 45 Stockholm</p>
             <p><strong>Phone:</strong> 08-123 456 78</p>
-            <p><strong>Email:</strong> contact@spaharmony.com</p>
+            <p><strong>Email:</strong> contact@skincarespa.com</p>
         </div>
         <h2>Find us</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2032.9994128997812!2d17.81047307735959!3d59.36634870805675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDIxJzU4LjkiTiAxN8KwNDgnNDcuMCJF!5e0!3m2!1sen!2sse!4v1740049021349!5m2!1sen!2sse"
@@ -78,81 +77,85 @@
 
             <label for="message">Your Message:</label><br>
             <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
-        
-        </div>
-       </div>
-     
-    </main>
-    
-    <!--FOOTER CONTENT-->
-   <footer>
-    <section class="container_footer">
-        <svg class="svg-point" height="75" width="100" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="0,0 50,35 100,0"  />
-            Sorry, your browser does not support inline SVG.
-          </svg>
-    <div class="boxes pages">
-        <ul class="spa">
-            <li class="li-title"><p>SKINCARE SPA</p></li>
-            <li><a href="../pages/about-us.html">About us</a></li>
-            <li><a href="../pages/our-products.html">Our Product</a></li>
-            <li><a href="../pages/gallery.html">Gallery</a></li>
-            <li><a href="../pages/contactus.html">Contact Us</a></li>
-        </ul>
-    </div>
-     <div class="boxes service">
-        <ul class="services">
-            <li class="li-title"><p>Services</p></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Group Reservations</a></li>
-            <li><a href="#">Events</a></li>
-        </ul>
-     </div>
-     <div class="boxes socialmedia">
-        <ul class="socials">
-            <li class="li-title"><p>Social Media</p></li>
-            <div class="icons">
-                <li class="circle-icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li class="circle-icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="circle-icon"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                <li class="circle-icon"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            
+            <a href="#popup" class="btn">Send Message</a>
+            <div id="popup" class="modal">
+                <div class="modal-content">
+                    <p>Thank you for getting in touch! <br>
+                        We’ve received your message and will get back to you soon. Until then, 
+                        take a deep breath and embrace the calm, you’re one step closer to the relaxation you deserve.
+                        
+                        We look forward to welcoming you soon!</p>
+                    <a href ="#" class="close-btn"> Close</a>
+                </div>
             </div>
-        </ul>
-    </div>
-     <div class="boxes activity">
-        <ul class="activities">
-            <li class="li-title"><p>Activities</p></li>
-            <li><a href="#">Activity 1</a></li>
-            <li><a href="#">Activity 2</a></li>
-            <li><a href="#">Activity 3</a></li>
-            <li><a href="#">Activity 4</a></li>
-        </ul>
-    </div>
-    </section>
-    <section class="container_footer2"> 
-    <div class="Subscription">
-        <h4 class="subscribe-title">Newsletter Subscription</h4>
-        <form class="form_letter">
-            <input id="email" type="email" placeholder="Enter email">
-            <input id="submit" type="submit" value="Send">
         </form>
-        <form class="form_region">
-            <label for="region"><i class="fa-solid fa-earth-americas"></i> Region: </label>
-            <select id="region">
-                <option>North</option>
-                <option>South</option>
-                <option>East</option>
-                <option>West</option>
-            </select>
-        </form>
-     </div>
-    </section>
-</footer>
+       </div>
+    </main>
+      <!--FOOTER CONTENT-->
+      <footer>
+        <section class="container_footer">
+            <svg class="svg-point" height="75" width="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="0,0 50,35 100,0"  />
+                Sorry, your browser does not support inline SVG.
+              </svg>
+        <div class="boxes pages">
+            <ul class="spa">
+                <li class="li-title"><p>SKINCARE SPA</p></li>
+                <li><a href="../pages/about-us.html">About us</a></li>
+                <li><a href="../pages/our-products.html">Our Product</a></li>
+                <li><a href="../pages/gallery.html">Gallery</a></li>
+                <li><a href="../pages/contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+         <div class="boxes service">
+            <ul class="services">
+                <li class="li-title">Services</li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Group Reservations</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+         </div>
+         <div class="boxes socialmedia">
+            <ul class="socials">
+                <li class="li-title"><p>Social Media</p></li>
+                <div class="icons">
+                    <li class="circle-icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="circle-icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="circle-icon"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li class="circle-icon"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </div>
+            </ul>
+        </div>
+         <div class="boxes activity">
+            <ul class="activities">
+                <li class="li-title"><p>Activities</p></li>
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+                <li><a href="#">Activity 3</a></li>
+                <li><a href="#">Activity 4</a></li>
+            </ul>
+        </div>
+        </section>
+        <section class="container_footer2"> 
+        <div class="Subscription">
+            <h4 class="subscribe-title">Newsletter Subscription</h4>
+            <form class="form_letter">
+                <input id="email" type="email" placeholder="Enter email">
+                <input id="submit" type="submit" value="Send">
+            </form>
+            <form class="form_region">
+                <label for="region"><i class="fa-solid fa-earth-americas"></i> Region: </label>
+                <select id="region">
+                    <option>North</option>
+                    <option>South</option>
+                    <option>East</option>
+                    <option>West</option>
+                </select>
+            </form>
+         </div>
+        </section>
+    </footer>
 
 </body>
 </html>
