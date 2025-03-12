@@ -8,7 +8,7 @@ h3 {
     margin: 10px;
 }
 body {
-    background-image: url(../images/canva.png);
+    background-image: url(../images/wood2.png);
     background-size: cover;
 }
 .container {
@@ -128,26 +128,6 @@ iframe:hover {
     100% {color: #9B4922; } 
 }
 
-footer {
-   color: #EFE7DD;
-   text-align: center;
-   padding: 20px, 10px;
-   margin-top: 50px;
-   margin-bottom: 50px;
-}
-
-.footer-social a {
-    color: #EFE7DD;
-    font-size: 30px;
-    margin: 0 30px;
-    transition: 0.3s;
-}
-.footer-social a:hover {
-    transform: scale(1.2);
-    color: #9B4922;
-    cursor: pointer;
-    animation: blinkCursor 0.8s infinite, colorChange 1s infinite alternate;
-}
 @keyframes blinkCursor {
     0% {opacity: 1;}
     50% {opacity: 0.8;}
@@ -156,4 +136,8 @@ footer {
 @keyframes colorChange {
     0% {color: #EFE7DD; }
     100% {color: #9B4922; } 
+}
+
+.svg-point{
+    fill: #CCD2D2;
 }
